@@ -18,7 +18,7 @@
 
 ## 📌 Overview
 
-CUPS printing-service configuration security auditor
+OCupsX — CUPS Printing-Service Configuration Auditor. It provides stdlib CUPS directive / <Block> parser (Location, Policy, Limit, Printer, Class, Subscription) with line tracking. Built-in demo/self-test paths and severity gates help validate detections without touching production when those flags are used.
 
 ---
 
@@ -30,8 +30,6 @@ CUPS printing-service configuration security auditor
 - printers.conf — shared queues, DeviceURI credentials (masked), file: devices, plaintext backends, OpPolicy
 - client.conf — Encryption, ValidateCerts, AllowAnyRoot, AllowExpiredCerts, TrustOnFirstUse, legacy SSL
 - cups-browsed — remote 'cups' protocol (CVE-2024-47176 chain), BrowseAllow, auto-created / re-shared queues
-- Secrets masked; --root discovery; CWE + MITRE; A+..F
-- TXT / MD / JSON / CSV / SARIF; --demo; --fail-on
 
 ---
 
@@ -45,7 +43,10 @@ CUPS printing-service configuration security auditor
 ## 🚀 Usage
 
 ```bash
-./OCupsX
+./OCupsX                                     # interactive menu
+./OCupsX --scan -r /path/to/root
+./OCupsX --demo
+./OCupsX --help
 ```
 
 ---
