@@ -53,7 +53,7 @@ OCupsX — CUPS Printing-Service Configuration Auditor. It provides stdlib CUPS 
 
 ## 📦 Part of OwlSec Toolkit
 
-This tool is part of the **OwlSec** suite — a collection of 300+ security and privacy tools.
+This tool is part of the **OwlSec** suite — a collection of 275+ security and privacy tools.
 
 🔗 [owlsec.org](https://owlsec.org)
 
